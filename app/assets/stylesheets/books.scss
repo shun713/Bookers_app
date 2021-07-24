@@ -13,6 +13,9 @@ body {
   line-height:18px;
   margin:33px;
 }
+.flash{
+  color:green;
+}
 
 h1 {
   font-size: 2em;
@@ -43,6 +46,9 @@ table {
 
 thead {
   vertical-align:middle;
+}
+th,td{
+  padding:5px;
 }
 
 a {

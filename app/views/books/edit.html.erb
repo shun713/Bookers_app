@@ -1,5 +1,11 @@
 <h1>Editing Book</h1>
-
+<% if @book.errors.any? %>
+  <h3><%= @book.errors.count %>errors prohibited this book from being saved:</h3>
+  <ul><% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
 <%= form_with model:@book,:url => {:action => :update}, local:true do |t| %>
   <p class="book_title">
     Title<br>
