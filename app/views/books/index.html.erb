@@ -13,13 +13,13 @@
         <td><%= b.title %></td>
         <td><%= b.body %></td>
         <td>
-          <%= link_to "Show" , book_show_path(b.id) %>
+          <%= link_to "Show" , book_path(b.id) %>
         </td>
         <td>
-          <%= link_to "Edit" , book_edit_path(b.id) %>
+          <%= link_to "Edit" , edit_book_path(b.id) %>
         </td>
         <td>
-          <%= link_to "Destroy" , book_destroy_path(b.id) ,method: :delete, "data-confirm" => "Are you sure?" %>
+          <%= link_to "Destroy" , destroy_book_path(b.id) ,method: :delete, "data-confirm" => "Are you sure?" %>
         </td>
       </tr>
     <% end %>
